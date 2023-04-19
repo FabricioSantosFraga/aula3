@@ -1,0 +1,47 @@
+body{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.comeco{
+    background-color: rgb(243, 243, 245);
+    width: 800px;
+    height: 400px;
+    margin-top: 300px;
+
+
+
+   
+    
+    
+
+
+
+    
+
+}
+.botao{
+    background-color: deepskyblue;
+    margin-left: 10px; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: rgb(251, 251, 252);
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.centro{
+    display: flex;
+    justify-content: center;
+}
