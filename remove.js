@@ -31,6 +31,14 @@ taskList.addEventListener('click', (event) => {
       tasks[taskIndex].completed = !tasks[taskIndex].completed;
       updateTaskList();
     }
+  } else if (event.target.tagName === 'BUTTON') {
+    const taskId = parseInt(event.target.dataset.id);
+    const taskIndex = tasks.findIndex(task => task.id === taskId);
+
+    if (taskIndex !== -1) {
+      tasks.splice(taskIndex, 1);
+      updateTaskList();
+    }
   }
 });
 
@@ -43,6 +51,12 @@ function updateTaskList() {
 
     const text = document.createTextNode(task.task);
     li.appendChild(text);
+
+    const button = document.createElement('button');
+    button.dataset.id = task.id;
+    const buttonText = document.createTextNode('Remover');
+    button.appendChild(buttonText);
+    li.appendChild(button);
 
     taskList.appendChild(li);
   });

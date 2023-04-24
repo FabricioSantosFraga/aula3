@@ -1,47 +1,59 @@
-body{
-    background-color: blue;
+body {
+    background-color: #3498db;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
-}
-
-.comeco{
-    background-color: rgb(243, 243, 245);
-    width: 800px;
-    height: 400px;
-    margin-top: 300px;
-
-
-
-   
-    
-    
-
-
-
-    
-
-}
-.botao{
-    background-color: deepskyblue;
-    margin-left: 10px; 
-    border-radius: 5px;
+  }
+  .container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  li.completed {
+    background-color: #ddd;
+  }
+  
+  button {
+    margin-left: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
     cursor: pointer;
-}
-.botao:hover{
-    background-color: rgb(251, 251, 252);
-    
-}
-h1{
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    flex: 1;
+  }
+  
+  form {
     display: flex;
-    justify-content: center;
-    
-    
-
-}
-.centro{
-    display: flex;
-    justify-content: center;
-}
+    margin-bottom: 16px;
+  }
+  
+  h1 {
+    text-align: center;
+  }

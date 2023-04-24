@@ -8,30 +8,18 @@
     <link rel="stylesheet" href="projeto.css">
 </head>
 <body>
-    <div class="comeco" id="" >
-        <h1>Minha lista de tarefas</h1>
-         <br>
-         <div class="centro">
-             <h2>Nova Tarefa</h2>
-             <input type="text" id="barra">
-             <button class="botao" >Adcionar</button>
-            </div>
-            
-        <li id="lista">
-                 
-                 
-
-
-            
-        </li>
-        <br>
+    <div class="container">
+		<h1>Minha Lista de Tarefas</h1>
+		<form id="taskForm">
+			<label for="taskInput">Nova Tarefa:</label>
+			<input type="text" id="taskInput" name="taskInput">
+			<button type="submit" id="addTaskButton">Adicionar Tarefa</button>
+		</form>
+		<ul id="taskList"></ul>
+	</div>
         
-
-
-
-
-
-    </div>
+       
+    <script src="remove.js"></script>
 
 </body>
 </html>
